@@ -5,6 +5,31 @@
     font-family: Arial, sans-serif;
 }
 
+
+nav{
+    background-color:#004643;
+}
+
+li{
+    color: #abd1c6;
+}
+header{
+    display:flex;
+    background-color:#004643;
+    justify-content: space-between;
+    align-items: center;
+}
+.curriculum{
+    display:flex;
+    align-items: center;
+    background-color:#004643;
+}
+
+.perfil{
+    height:200px;
+    margin-right: 100px;
+}
+
 .subtitulo {
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,11 +39,16 @@ h1 {
 }
 
 #section {
-    background-color: red;
+    background-color: #004643;
 }
     
-.myClass > #myDiv {
-    color: blue;
+.fondo > #section {
+    background-color: #004643;
+}
+
+.fondoPrincipal{
+    background-color: #004643;
+    color:#fffffe
 }
 
         

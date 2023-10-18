@@ -9,7 +9,10 @@
 
 <body>
     <header>
-        <h1>Currículum Vitae</h1>
+        <div class="curriculum">
+            <img src="images/perfil.png" alt="fotoPerfil" class="perfil">
+            <h1 class="nombre"><span style="color:#fffffe">Kevin Gianfranco Ibarra Prado</span></h1>
+        </div>
     </header>
     <nav>
         <ul>
@@ -19,12 +22,10 @@
             <li><a href="#experiencia">Habilidades</a></li>
         </ul>
     </nav>
-    <div class="fondo">
-        <div id="section">
+    <div class="fondoPrincipal">
+        <section id="section" class="fondo">
             <h2 class="subtitulo">Información personal</h2>
-            <p>
-                Nombre: <span>Kevin Gianfranco Ibarra Prado</span>
-            </p>
+
 
             <p>
                 Teléfono: <span>0963305355</span>
@@ -32,8 +33,8 @@
             <p>
                 Correo electrónico: <span>keviprad@espol.edu.ec</span>
             </p>
-        </div>
-        <div id="educacion" class="fondo">
+        </section class="fondo">
+        <section id="educacion" class="fondo">
             <h2 class="subtitulo">Educación</h2>
             <p>
                 Ocupación: <span>Estudiante</span>
@@ -42,8 +43,8 @@
                 Institución: <span>Escuela Superior Politécnica Del Litoral</span>
             </p>
 
-        </div>
-        <div id="experiencia" class="fondo">
+        </section>
+        <section id="experiencia" class="fondo">
             <h2 class="subtitulo">Experiencia</p>
             </h2>
             <p>
@@ -61,12 +62,12 @@
                 <li>Trabajo en equipo</li>
             </ul>
             </p>
-        </div>
-        <div id="habilidades" class="fondo">
-            <span style="color: red">
+        </section>
+        <section id="habilidades" class="fondo">
+            <span>
                 <h2 class="subtitulo">Habilidades</h2>
             </span>
-            <table text-align>
+            <table border="1">
                 <thead>
                     <tr>
                         <th>Lenguajes de programación</th>
@@ -82,12 +83,46 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
+        <hr>
+            
+            <form id="formulario">
+
+                <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos"
+                    name="nombrescompletos" required="required" /><br>
+
+                <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico"
+                    name="correoelectronico" required="required" /><br>
+
+                <label>Género:</label><br>
+                <input type="radio" id="femenino" name="genero" value="femenino"> <label
+                    for="femenino">Femenino</label><br>
+                <input type="radio" id="masculino" name="genero" value="masculino"> <label
+                    for="masculino">Masculino</label><br>
+                <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked"> <label
+                    for="noresponder">Prefiero no responder</label><br>
+
+                <label for="fechanacimiento">Fecha de nacimiento:</label> <input type="date" id="fechanacimiento"
+                    name="fechanacimiento" required="required" /><br>
+                <label for="puntuacion">Puntuación:</label> <input type="number" id="puntuacion" name="puntuacion"
+                    min="1" max="10" /><br>
+
+                <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10"
+                    cols="50"></textarea><br>
+
+                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un
+                    robot</label><br>
+
+                <button type="submit" name="enviar">Enviar</button> <button type="reset"
+                    name="reiniciar">Cancelar</button>
+            </form>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.4852919495!2d-80.11700470273438!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1697590628561!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <footer class="fondo">
+                <a href="https://www.linkedin.com/in/kevin-ibarra-628040210/">LinkedIn</a>
+                <p>Copyright © 2023 Kevin Ibarra</p>
+            </footer>
     </div>
-    <a href="https://www.linkedin.com/in/kevin-ibarra-628040210/">LinkedIn</a>
-    <footer>
-        <p>Copyright © 2023 Kevin Ibarra</p>
-    </footer>
 </body>
 
 </html>
