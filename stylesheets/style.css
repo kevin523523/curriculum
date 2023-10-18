@@ -3,21 +3,34 @@
 
 * {
     font-family: Arial, sans-serif;
+    color:#001e1d;
 }
 
 
 nav{
-    background-color:#004643;
+    background-color:#abd1c6;
+    margin-top: -16px;
+    margin-bottom: -16px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 
 li{
-    color: #abd1c6;
+    color: #001e1d;
 }
+
+a{
+    color:#001e1d;
+}
+
 header{
     display:flex;
     background-color:#004643;
     justify-content: space-between;
     align-items: center;
+    margin-top: -10px;
+    margin-left: -8px;
+    margin-right: -8px;
 }
 .curriculum{
     display:flex;
@@ -32,6 +45,7 @@ header{
 
 .subtitulo {
     font-family: 'Montserrat', sans-serif;
+    color:#e16162;
 }
 
 h1 {
@@ -39,7 +53,8 @@ h1 {
 }
 
 #section {
-    background-color: #004643;
+    background-color: #abd1c6;
+    
 }
     
 .fondo > #section {
@@ -47,8 +62,40 @@ h1 {
 }
 
 .fondoPrincipal{
-    background-color: #004643;
-    color:#fffffe
+    background-color: #abd1c6;
+    color:#fffffe;
+    margin-bottom: -20px;
+    margin-left: -7px;
+    margin-right: -7px;
 }
+
+section {
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    
+}
+form{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+iframe{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+footer{
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+    
 
         
