@@ -8,7 +8,7 @@
 }
 body{
 	background-image: linear-gradient(#636162, #b1afaf);
-	height: 122vh;
+	height: 100vh;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
@@ -36,16 +36,19 @@ header{
 
 }
 .left{
-    align-items: center;
+
     background-color:#004643;
 	float: left;
     flex:0;
+    padding: 30px;
+
 }
 
 .right{
-	width: 450px;
+	width: 65%;
 	float: left;
     flex:1;
+    padding: 20px;
 }
 
 .perfil{
@@ -154,4 +157,16 @@ button {
 
 button[type="reset"] {
     background-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto; 
+    }
+
+    .left, .right {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
 }
