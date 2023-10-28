@@ -4,90 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <title>Currículum Vitae</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="curriculum">
-            <img src="images/perfil.png" alt="fotoPerfil" class="perfil">
-            <h1 class="nombre"><span style="color:#fffffe">Kevin Gianfranco Ibarra Prado</span></h1>
+    <div class="main">
+        <div class="left">
+            <div class="box-1">
+                <header class="curriculum">
+                    <img src="images/perfil.png" alt="fotoPerfil" class="perfil">
+                    <h1 class="nombre"><span style="color:#fffffe">Kevin Gianfranco Ibarra Prado</span></h1>
+                </header>
+            </div>
+            <div class="box-1">
+                <div class="heading">
+                    <p>Información personal</p>
+                </div>
+                <ul>
+                    <li class="p1">
+                        <p class="p1">
+                            Teléfono: 0963305355
+                        </p>
+                    </li>
+                    <li class="p1">
+                        <p class="p1">Correo: keviprad@espol.edu.ec</p>
+                    </li>
+                    <li class="p1">
+                        <p class="p1">Cuenta de Linkedln: <a class="p1"
+                                href="https://www.linkedin.com/in/kevin-ibarra-628040210/">LinkedIn</a></p>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <br>
+            <div class="box-1">
+                <div class="heading">
+                    <p>Hobbies</p>
+                </div>
+                <ul>
+                    <li class="p1">Piano</li>
+                    <li class="p1">Leer</li>
+                    <li class="p1">Ecuavolley</li>
+                    <li class="p1">programar</li>
+                </ul>
+            </div>
+            <div class="box-1">
+                <div class="heading">
+                    <p>Barra de navigación</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="p1"><a  class="p1"href="#educacion">Educación</a></li>
+                        <li class="p1"><a class="p1" href="#experiencia">Experiencia</a></li>
+                        <li class="p1"><a class="p1" href="#habilidades">Habilidades</a></li>
+                        <li class="p1"><a class="p1" href="#contactame">Contáctame</a></li>
+                        <li class="p1"><a class="p1" href="#mapa">Mapa</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#section">Inicio</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#experiencia">Habilidades</a></li>
-        </ul>
-    </nav>
-    <div class="fondoPrincipal">
-        <section id="section" class="fondo">
-            <h2 class="subtitulo">Información personal</h2>
+        <div class="right">
 
+            <section id="educacion" class="fondo">
+                <h2 class="subtitulo">Educación</h2>
+                <p>
+                    Ocupación: <span>Estudiante</span>
+                </p>
+                <p>
+                    Institución: <span>Escuela Superior Politécnica Del Litoral</span>
+                </p>
 
-            <p>
-                Teléfono: <span>0963305355</span>
-            </p>
-            <p>
-                Correo electrónico: <span>keviprad@espol.edu.ec</span>
-            </p>
-        </section class="fondo">
-        <section id="educacion" class="fondo">
-            <h2 class="subtitulo">Educación</h2>
-            <p>
-                Ocupación: <span>Estudiante</span>
-            </p>
-            <p>
-                Institución: <span>Escuela Superior Politécnica Del Litoral</span>
-            </p>
+            </section>
 
-        </section>
-        <section id="experiencia" class="fondo">
-            <h2 class="subtitulo">Experiencia</p>
-            </h2>
-            <p>
-                Cargo: Ayudante de gestión<span></span>
-            </p>
-            <p>
-                Empresa: Escuela Superior Politécnica Del Litoral<span></span>
-            </p>
+            <section id="experiencia" class="fondo">
+                <h2 class="subtitulo">Experiencia</p>
+                </h2>
+                <p>
+                    Cargo: Ayudante de gestión<span></span>
+                </p>
+                <p>
+                    Empresa: Escuela Superior Politécnica Del Litoral<span></span>
+                </p>
 
-            <p>
-                Descripción:
-            <ul>
-                <li>Desarrollo de aplicaciones web</li>
-                <li>Mantenimiento de sistemas</li>
-                <li>Trabajo en equipo</li>
-            </ul>
-            </p>
-        </section>
-        <section id="habilidades" class="fondo">
-            <span>
-                <h2 class="subtitulo">Habilidades</h2>
-            </span>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Lenguajes de programación</th>
-                        <th>Herramientas de desarrollo</th>
-                        <th>Otros</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Python, Java, C</td>
-                        <td>Visual Studio Code, Git</td>
-                        <td>Inglés</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <hr>
-            
-            <form id="formulario">
-                <h2>Contáctame</h2>
+                <p>
+                    Descripción:
+                <ul>
+                    <li>Desarrollo de aplicaciones web</li>
+                    <li>Mantenimiento de sistemas</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+                </p>
+            </section>
+
+            <section id="habilidades" class="fondo">
+                <span>
+                    <h2 class="subtitulo">Habilidades</h2>
+                </span>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Lenguajes de programación</th>
+                            <th>Herramientas de desarrollo</th>
+                            <th>Otros</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Python, Java, C</td>
+                            <td>Visual Studio Code, Git</td>
+                            <td>Inglés</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <form id="contactame">
+                <h2 class="subtitulo">Contáctame</h2>
                 <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos"
                     name="nombrescompletos" required="required" /><br>
 
@@ -97,18 +132,26 @@
                 <label for="mensaje">En que te puedo ayudar:</label> <textarea id="mensaje" name="mensaje" rows="10"
                     cols="50"></textarea><br>
 
-                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un
-                    robot</label><br>
+                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"><label for="nosoyunrobot">No soy un
+                    robot</label> <br>
 
                 <button type="submit" name="enviar">Enviar</button> <button type="reset"
                     name="reiniciar">Cancelar</button>
             </form>
-            <hr>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.4852919495!2d-80.11700470273438!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1697590628561!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="mapa">
+                <h2 class="subtitulo">Mapa</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.4852919495!2d-80.11700470273438!3d-2.1478802000000035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1697590628561!5m2!1ses!2sec"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
             <footer class="fondo">
-                <a href="https://www.linkedin.com/in/kevin-ibarra-628040210/">LinkedIn</a>
                 <p>Copyright © 2023 Kevin Ibarra</p>
             </footer>
+        </div>
+
     </div>
 </body>
 

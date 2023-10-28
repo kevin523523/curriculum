@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
 
+
 * {
     font-family: Arial, sans-serif;
     color:#001e1d;
 }
+body{
+	background-image: linear-gradient(#636162, #b1afaf);
+	height: 122vh;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
 
-
+.nombre{
+    padding:40px;
+}
 nav{
-    background-color:#abd1c6;
-    margin-top: -16px;
-    margin-bottom: -16px;
-    margin-left: -8px;
-    margin-right: -8px;
+    background-color:#004643;
 }
 
 li{
@@ -28,19 +33,36 @@ header{
     background-color:#004643;
     justify-content: space-between;
     align-items: center;
-    margin-top: -10px;
-    margin-left: -8px;
-    margin-right: -8px;
+
 }
-.curriculum{
-    display:flex;
+.left{
     align-items: center;
     background-color:#004643;
+	float: left;
+    flex:0;
+}
+
+.right{
+	width: 450px;
+	float: left;
+    flex:1;
 }
 
 .perfil{
     height:200px;
     margin-right: 100px;
+    height: 180px;
+	width: 180px;
+	background-color: #ddd;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	margin-left: 60px;
+	border: 10px solid #fbb03b;
+	box-shadow: 6px 7px 9px 5px #fbb03b73;
+}
+
+.box-1{
+	position: relative;
 }
 
 .subtitulo {
@@ -61,41 +83,75 @@ h1 {
     background-color: #004643;
 }
 
-.fondoPrincipal{
+.main{
     background-color: #abd1c6;
     color:#fffffe;
-    margin-bottom: -20px;
-    margin-left: -7px;
-    margin-right: -7px;
+    border: 1px;
+    padding: 5px;
+    display: flex;
+	height: auto;
+	left: 50%;
+	top: 60%;
+
 }
 
-section {
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    
-}
-form{
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-left: 20px;
+.box{
+    border: 1px;
+    font-size:15px;
+    text-align:center;
+
 }
 
-iframe{
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-left: 20px;
+.informacion{
+    border: 1px;
+    font-size:15px;
 }
 
-footer{
-    padding-top: 5px;
-    padding-right: 20px;
-    padding-bottom: 5px;
-    padding-left: 20px;
+.heading{
+	background-color: #fffffe;
+	padding: 10px;
+	text-align: left;
+	padding-left: 20px;
 }
-    
 
-        
+.p1{
+	padding: 9px 10px;
+	font-size: 20px;
+    color:#b1afaf;
+}
+.right{
+    padding: 9px 10px;
+	width: 450px;
+	float: left;
+    font-size: 20px;
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="reset"] {
+    background-color: #ccc;
+}
