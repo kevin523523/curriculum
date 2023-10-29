@@ -11,14 +11,36 @@ body{
 	height: 100vh;
 	font-weight: bold;
 	letter-spacing: 2px;
+    margin: 0;
+}
+header.curriculum {
+    background-color: #00755e;
+    text-align: center;
+    padding: 20px 0;
+}
+header.curriculum .perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fbb03b;
+    box-shadow: 0px 2px 6px 3px #fbb03b73;
+}
+h1.nombre {
+    color: #fffffe;
+    margin-top: 10px;
 }
 
-.nombre{
-    padding:40px;
+.nombre {
+    padding: 10px; 
+    margin: 0;
 }
+
+
 nav{
-    background-color:#004643;
+    background-color: #004643;
+    padding: 10px 0;
 }
+
 
 li{
     color: #001e1d;
@@ -26,12 +48,13 @@ li{
 
 a{
     color:#001e1d;
+    text-decoration: none;
 }
 
 header{
     display:flex;
-    background-color:#004643;
-    justify-content: space-between;
+    background-color:#00755e;
+    justify-content: center;
     align-items: center;
 
 }
@@ -39,30 +62,53 @@ header{
 
     background-color:#004643;
 	float: left;
-    flex:0;
+    flex:1;
     padding: 30px;
 
 }
-
+section.fondo {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+h2.subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #e16162;
+}
 .right{
 	width: 65%;
 	float: left;
-    flex:1;
+    flex:2;
     padding: 20px;
+}
+table, th, td {
+    border: 1px solid #001e1d;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    max-width: 500px;
+
 }
 
 .perfil{
-    height:200px;
+    height:150px;
     margin-right: 100px;
     height: 180px;
-	width: 180px;
+    width: 150px; 
+    max-width: 180px; 
 	background-color: #ddd;
 	border-radius: 50%;
-	margin-bottom: 20px;
-	margin-left: 60px;
+	margin-right: 20px;
+	margin-left: 0px;
 	border: 10px solid #fbb03b;
 	box-shadow: 6px 7px 9px 5px #fbb03b73;
 }
+
 
 .box-1{
 	position: relative;
@@ -90,11 +136,13 @@ h1 {
     background-color: #abd1c6;
     color:#fffffe;
     border: 1px;
-    padding: 5px;
+    padding: 0px;
     display: flex;
 	height: auto;
 	left: 50%;
 	top: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
@@ -136,10 +184,10 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 input[type="checkbox"] {
@@ -153,15 +201,27 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+    color: #fffffe;
 }
 
 button[type="reset"] {
     background-color: #ccc;
+    color: #001e1d;
 }
 
+footer {
+    background-color: #00755e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    color: #fffffe;
+}
 @media (max-width: 768px) {
+
     body {
-        height: auto; 
+        height: auto;
     }
 
     .left, .right {
